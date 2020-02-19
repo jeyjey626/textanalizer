@@ -40,8 +40,6 @@ public class PdfReader {
             text = text.replaceAll("\u017a", "X");
             text = text.replaceAll("\u017c", "Z");
 
-            System.out.println(text);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
