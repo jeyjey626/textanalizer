@@ -6,7 +6,7 @@ import java.util.HashSet;
 
 public class VowelRecognizer {
 
-    private static HashSet<String> vowelSet = new HashSet<>(Arrays.asList("a", "ą", "e", "ę", "i", "o", "ó", "u", "y"));
+    private static HashSet<String> vowelSet = new HashSet<>(Arrays.asList("a", "A", "e", "E", "i", "o", "O", "u", "y"));
     static boolean isVowel(String s){
         return vowelSet.contains(s);
     }

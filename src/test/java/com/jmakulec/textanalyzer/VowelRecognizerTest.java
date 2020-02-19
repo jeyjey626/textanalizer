@@ -15,7 +15,7 @@ public class VowelRecognizerTest {
     public void checkVowels(){
 
         //given
-        ArrayList<String> vowelList = new ArrayList<>(Arrays.asList("a", "ą", "e", "ę", "i", "o", "ó", "u", "y"));
+        ArrayList<String> vowelList = new ArrayList<>(Arrays.asList("a", "A", "e", "E", "i", "o", "O", "u", "y"));
         Random random = new Random();
 
         //when
