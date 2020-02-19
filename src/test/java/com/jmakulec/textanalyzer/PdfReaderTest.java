@@ -14,7 +14,7 @@ public class PdfReaderTest {
 
     @Test
     public void sliceDocument(){
-        ArrayList<String> test = PdfReader.readText(new File("E:\\Dokumenty\\PracaInz\\docs\\exampledoc.pdf"), "UTF8");
+        ArrayList<String> test = PdfReader.readText(new File("E:\\Dokumenty\\PracaInz\\docs\\exampledoc.pdf"));
 
         System.out.println(test);
         assertEquals(Arrays.asList("przykLadowy", "dokumencik", "Lojeju"),

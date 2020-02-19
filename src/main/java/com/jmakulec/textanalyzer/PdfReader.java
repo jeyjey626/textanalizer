@@ -24,7 +24,7 @@ public class PdfReader {
     private static String text;
 
 
-    public static ArrayList<String> readText(File file, String encoding){
+    public static ArrayList<String> readText(File file){
         try {
             document = PDDocument.load(file);
             PDFTextStripper pdfStripper = new PDFTextStripper();
