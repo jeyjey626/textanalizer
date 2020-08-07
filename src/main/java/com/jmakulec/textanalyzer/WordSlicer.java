@@ -15,6 +15,11 @@ public class WordSlicer {
         while (stopPoint < input.length()){
             if(VowelRecognizer.isVowel(String.valueOf(input.charAt(stopPoint)))) {
                 if (stopPoint - startPoint == 0){workableArrayList.add(String.valueOf(input.charAt(stopPoint)));}
+                if ( stopPoint + 1 == input.length() - 1) {
+                    workable = input.substring(startPoint);
+                    workableArrayList.add(workable);
+                    stopPoint ++;
+                }
                 else if(stopPoint == input.length() -1){
                     workable = input.substring(startPoint);
                     workableArrayList.add(workable);
